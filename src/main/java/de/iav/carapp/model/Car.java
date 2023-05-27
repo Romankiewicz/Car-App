@@ -48,7 +48,7 @@ public class Car {
         this.vin = vin;
     }
 
-    public boolean isHu() {
+    public boolean getHu() {
         return hu;
     }
 
