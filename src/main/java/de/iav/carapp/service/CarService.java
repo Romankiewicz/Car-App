@@ -9,7 +9,7 @@ import java.util.List;
 @Service
 public class CarService {
 
-    private CarReopsitory carReopsitory;
+    private final CarReopsitory carReopsitory;
 
     public CarService(CarReopsitory carReopsitory) {
         this.carReopsitory = carReopsitory;
