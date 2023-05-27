@@ -15,6 +15,7 @@ public class CarService {
         this.carReopsitory = carReopsitory;
     }
 
+
     public List<Car> getAllCars() {
         return carReopsitory.getAllCars();
     }
@@ -33,6 +34,7 @@ public class CarService {
 
     public void addCar(Car car){
         carReopsitory.addCar(car);
+
     }
 
     public void deleteCar(String id){

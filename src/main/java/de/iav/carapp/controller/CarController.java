@@ -37,12 +37,12 @@ public class CarController {
     }
 
     @PostMapping("/addcar")
-    public void addCar(Car car){
+    public void addCar(@RequestBody Car car){
         carService.addCar(car);
     }
 
-    @PostMapping("/updatecar/{id},{car}")
-    public Car updateCar(@PathVariable String id, @PathVariable Car car){
+    @PostMapping("/update/{id}")
+    public Car updateCar(@PathVariable String id, @RequestBody Car car){
         return carService.updateCar(id ,car);
     }
 
@@ -50,4 +50,5 @@ public class CarController {
     public void deleteCar(@PathVariable String id){
          carService.deleteCar(id);
     }
+
 }

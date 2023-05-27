@@ -79,4 +79,12 @@ public class CarReopsitory {
         return carToUpdate;
     }
 
+    //Basis Liste an Fahrzeugen:
+    private void addInitialCar(){
+        this.cars.addAll(List.of(new Car("Toyota", "MR2", "JT163SW2000080080", false, "1", "none"),
+                new Car("Mitsubishi", "Galant", "JMBSNE32AJZ510000", true, "2", "B-WM 221H"),
+                new Car("Peugeot", "206", "VF32CKFWA42422174",false, "3", "B-SG 2378"),
+                new Car("Volks Wagen", "Golf", "*unknown*", false, "4", "none"),
+                new Car("Honda", "Civic", "unknown", false, "0", "none")));
+    }
 }
